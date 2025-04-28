@@ -1,20 +1,20 @@
 # Exp.No:16  
-## DICTIONARY - SIZE OF DICTIONARY
+## DICTIONARY - MERGING TWO DICTIONARY
 
 ---
 
 ### AIM  
-To write a Python program to print the size of a dictionary using `getsizeof()` from the `sys` module.
+To write a python program to merge the dictionary1 with dictionary2
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Import the `sys` module to use the `getsizeof()` function.  
-3. Define the dictionaries with key-value pairs (`dic1`, `dic2`, `dic3`).  
-4. Use `sys.getsizeof()` to calculate the memory size of each dictionary.  
-5. Print the size of each dictionary in bytes.  
+2. Get the dictionary1 from the user
+3. Get the dictionary2 from the user
+4. Update dict2 in dict1
+5. Print dictionary1
 6. Terminate the program.
 
 ---
@@ -22,15 +22,15 @@ To write a Python program to print the size of a dictionary using `getsizeof()` 
 ### PROGRAM
 
 ```
-#Reg.No
-#Name
-#Add Your Code Here
-
-
-
+dict1= eval(input())
+dict2= eval(input())
+dict1.update(dict2)
+print(dict1)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/27958644-9256-43a9-8492-1240f78be811)
 
 
 ### RESULT
+Thus the python program to merge the dictionary1 with dictionary2 has been executed successfully.
