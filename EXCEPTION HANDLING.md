@@ -23,12 +23,20 @@ To create a Python program that prompts the user for a list of grades separated 
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
-
+x=input().split(",")
+y=[]
+try:
+    for i in range(len(x)):
+        y.append(int(x[i]))
+    print(y)
+except:
+    print("The grades you entered were in an invalid format.")
+    print(x)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/84c101c8-cc52-419f-8dbc-db177da3eea7)
+
 
 ### RESULT
+Thus the Python program to separate a list of grades by commas has been executed successfully.
