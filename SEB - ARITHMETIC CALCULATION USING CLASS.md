@@ -1,45 +1,39 @@
 # Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
+## SEB - DICTIONARY
 
----
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
-
----
+To Write a python program that asks the user to enter an integer n and return a dictionary whose keys are integers 1, 2, 3, ... n and whose values ​​are 1! , 2! , 3! , … , n!
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+2. Input an integer a from the user.
+3. Initialize an empty dictionary d.
+4. Initialize a variable f = 1 to store the running factorial.
+5. Loop i from 1 to a - 1 (not including a):
+6. Multiply f by i → f = f * i
+7. Store this factorial in the dictionary → d[i] = f
+8. After the loop ends, print the dictionary with the message: "The obtained dictionary is d = ", d
+9. Terminate the program.
 
 ---
 
 ### PROGRAM
 
 ```
-
-
-
+a=int(input())
+d=dict()
+f=1
+for i in range(1,a):
+    f=f*i
+    d[i]=f
+print("The obtained dictionary is d = ",d)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/ccff069b-f45d-4228-9b6e-cc741e25a809)
+
 
 ### RESULT
+Thus the python program that asks the user to enter an integer n and return a dictionary whose keys are integers 1, 2, 3, ... n and whose values ​​are 1! , 2! , 3! , … , n! has been executed successfully.
